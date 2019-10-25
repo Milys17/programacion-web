@@ -1,0 +1,19 @@
+a:link { 
+    color: hsla(49, 76%, 53%, 0.795);
+}
+
+a:hover { 
+    color: cornflowerblue;
+    font-size: 1.5em;
+}
+a:active { color: aqua;}
+.contenedor { position: relative; height: 190px; width: 190px; margin: 20px 10px; float: left;}
+.contenedor img { 
+    position: absolute; 
+    left: 0; 
+    transition: opacity 1.5s ease-in-out;
+}
+.contenedor img.top:hover {opacity: 0;}
+body{ background: #303030b9; color: yellow;}
+p.oculto { display: none; background-color: tomato; padding: 20px;}
+div:hover p { display: block;}

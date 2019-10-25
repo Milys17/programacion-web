@@ -1,0 +1,96 @@
+<!-- Posicion
+Establece la posicion y el tipo de comportamiento de un elemento
+position    static/relative/fixed/absolute/sticky
+
+static:     el elemento se posiciona en forma estatica
+        div.estatico{
+            position: static;
+            border: 3px solid potato;
+        }
+
+relative:   el elemento se posiciona en forma relativa   
+        div.relativo {
+            position: relative;
+            left: 30px;
+            border: 3px dotted orange;
+        }
+
+fixed:      se posiciona el elemento relativo a la pantalla y su comportamiento es estar inmovil aun que se mueva la pantalla
+        div.fix{
+            position:fixed;
+            bottom: 0; right: 0;
+            width: 300px;
+            border: 3px dashed green;
+        }
+
+absolute    se posiciona en forma relativa al elemento anterior
+        div.absoluto{
+            position: absolute; top:80px; right: 10px;
+            width: 200px; height:100px;
+            border: 3px groove navy;
+        }
+
+sticky      se posiciona al elemento y se comporta moviendose con la pantalla
+        div.pegajoso{
+            position: sticky; top: 5px;
+            background-color: yellow;
+            border: 2px solid brown;
+        }
+        -->
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <title>...</title>
+    <style>
+        div.estatico {
+            position: static;
+            border: 3px solid potato;
+        }
+
+        div.relativo {
+            position: relative;
+            left: 30px;
+            border: 3px dotted orange;
+        }
+
+        div.fix {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px dashed green;
+        }
+
+        div.absoluto {
+            position: absolute;
+            top: 80px;
+            right: 10px;
+            width: 200px;
+            height: 100px;
+            border: 3px groove navy;
+        }
+
+        div.pegajoso {
+            position: sticky;
+            top: 5px;
+            background-color: yellow;
+            border: 2px solid brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="estatico">Estatico Texto</div>
+    
+    <div class="relativo">Relativo Texto</div>
+    
+    <div class="fix">Fixed Texto</div>
+    
+    <div class="absoluto"> Absoluto Texto</div>
+    
+    <div class="pegajoso">Pegajoso Texto</div>
+    
+</body>
+
+</html>

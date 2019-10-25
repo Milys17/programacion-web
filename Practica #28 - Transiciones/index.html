@@ -1,0 +1,104 @@
+<!-- Transiciones
+Establece cambios en las propiedades durante un periodo determinado
+
+Transition
+-delay      Establece en segundos el periodo
+-duration   Establece cuantos segundos toma efecto las propiedades
+-property   Establece el nombre de la propiedad para la transicion
+-funtion    Establece la curva de velocidad
+
+*valores    ease, linear, ease-in, ease-out, 
+            ease-in-out, step-start, step-end, 
+            -steps(int,start|end), 
+            cubic-bezier(n, n, n, n)
+div{
+    width:100px;
+    height:100px;
+    -webkit-transition: width 2s linear 1s;
+    transition: width 2s linear 1s
+}
+
+div:hover{
+    width:300px;
+}-->
+
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <title>Transiciones</title>
+    <style>
+    div{
+        width:100px;
+        height:100px;
+        -webkit-transition: width 2s linear 1s;
+        transition: width 2s linear 1s;
+    }
+
+    *{
+        border: 2px solid red;
+    }
+
+    div:hover{
+        width:300px;
+    }
+
+    #div1{
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+
+    #div2{
+        -webkit-transition-timing-function: ease;
+        transition-timing-function: ease;
+    }
+
+    #div3{
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    #div4{
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    #div5{
+        -webkit-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+    }
+
+    #div6{
+        -webkit-transition-timing-function: cubic-bezier(0,0,1,1);
+        transition-timing-function: cubic-bezier(0,0,1,1);
+    }
+
+    #div7{
+        -webkit-transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+        transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+    }
+
+    #div8{
+        -webkit-transition-timing-function: cubic-bezier(0.42,0,1,1);
+        transition-timing-function: cubic-bezier(0.42,0,1,1);
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Usando la propiedad transicion</h1>
+    <p>Posa el punterio del raton sobre el cuadri azul y observa el efecto de transicion</p><div>Mensaje</div>
+   
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+    <div id="div6">cubic-bezier(0,0,1,1)</div>
+    <div id="div7">cubic-bezier(0.25,0.1,0.25,1)</div>
+    <div id="div8">cubic-bezier(0.42,0,1,1)</div>
+</body>
+
+</html>

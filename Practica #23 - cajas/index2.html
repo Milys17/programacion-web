@@ -1,0 +1,52 @@
+<!-- propiedad z-index
+-->
+
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <title>...</title>
+
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .imgContenedor {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Imagenes lado a lado</h2>
+    <p>Propiedad Float:</p>
+    <div class="clearfix">
+        <div class="imgContenedor">
+            <img width="300px" height="150px" src="https://images-na.ssl-images-amazon.com/images/I/913LOf4vO3L.png">
+        </div>
+
+        <div class="imgContenedor">
+            <img width="300px" height="150px"
+                src="https://http2.mlstatic.com/minecraft-windows-10-edition-codigo-original-juego-completo-D_NQ_NP_883079-MLM26548960523_122017-F.jpg">
+        </div>
+
+        <div class="imgContenedor">
+            <img width="300px" height="150px"
+                src="https://image.winudf.com/v2/image/Y29tLm1vamFuZy5taW5lY3JhZnRwZV9zY3JlZW5fOF8xNTE0NDUxMDUxXzA2Mw/screen-8.jpg?fakeurl=1&type=.jpg">
+        </div>
+    </div>
+</body>
+
+</html>

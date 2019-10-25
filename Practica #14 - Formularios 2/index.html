@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="es-MX">
+        <head><title>Elementos de formularios</title></head>
+        <body>
+            <h1>Probando los controles de formilario basicos</h1>
+            <form name="formulario1">
+                Nombre de usuario <input type="text" size="25" maxlength="20" name="usuario"/>
+                <br><br>
+                Contraseña <input type="password" name="contrasena" maxlength="8"/>
+                <br><br>
+                Descripcion: <textarea name="desc" rows="4" cols="30">Escribe una descripcion aqui...</textarea>
+                <br><br>
+                Sexo:
+                <br><br>
+                Femenino<input type="radio" name="sexo"/>
+                Masculino<input type="radio" name="sexo"/>
+                <br><br>
+                Caracteristicas que tienes:
+                <br><br>
+                <input type="checkbox" name="altura" value="on"/>Alto
+                <input type="checkbox" name="complexio" value="on"/>Delgado
+                <input type="checkbox" name="moreno" value="on"/>Moreno
+                <input type="checkbox" name="castano" value="on"/>Castaño
+                <input type="checkbox" name="projo" value="on"/>Pelirojo
+                <input type="checkbox" name="rubio" value="on"/>Rubio
+                <br><br>
+                Ciudad: <select name="ciudad">
+                    <option value="mxli" selected>Mexicali</option>
+                    <option value="mxli" selected>Tijuana</option>
+                    <option value="mxli" selected>Ensenada</option>
+                    <option value="mxli" selected>Tecate</option>
+                </select>
+                <br><br>
+                Subir archivo:
+                <input type="file" name="attach" accept="application/pdf"/>
+                <br><br>
+                <input type="search" name="buscar" value="Buscar..."/><br>
+                <input type="submit" name="enviar" value="Aceptar..."/><br>                
+                <input type="reset" name="limpia" value="Limpiar..."/><br>
+            </form>
+        </body>
+    </html>

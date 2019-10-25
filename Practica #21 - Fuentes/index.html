@@ -1,0 +1,104 @@
+<!-- Fuentes -> font
+ font-family    Tipo de letra
+    font-family:    "times","serif","arial";
+
+font-size       Establece el tamaño de las letras
+                medium, xx-small, x-small, small, large, x-large, smaller,
+                larger, %, unidad de medida;
+            font-size: xx-large;
+        
+font-style      Establece el estilo de letra
+                normal, italic, oblique
+            
+font-variant    Convierte a las minusculas en mayusculas pequeñas
+                "FONT"
+                normal, small-caps;
+            
+font-weight     Establece el frosor de las letras
+                normal, bold, bolder, lighter,
+                100, 200, ... 900
+            font-weight: 500;
+
+@font-face      Establece fuentes personalizadas
+                @font-face{
+                    font-family: misfuentes;
+                    src: url(sansation_light.woff);
+                }
+
+float / clear
+
+float           Establece como un elemento
+                debe flotar con respecto a otro
+            
+clear           Establece como puede  flotar al
+                lado del elemento de anclarado
+
+float           left / right / none
+
+clear           left / right / both / none
+
+float: none;
+float: left;
+float: right;
+
+Alineacion de elementos:
+
+.centrar{
+        margin: auto;
+        width:  60%;
+        border: 3px solid cyan;
+        padding: 10px;    
+}
+
+<div class="centrar">
+    <p><b>Comentario:</b>El uso del margen no funciona en el IE8 o menores, se recomienda la declaracion !DOCTYPE </p></div>
+-->
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <title>...</title>
+
+    <style>
+        h1 {
+            font-family: "times", "serif", "arial";
+        }
+
+        h2 {
+            font-size: xx-large;
+        }
+
+        h3 {
+            font-style: italic;
+        }
+
+        h4 {
+            font-variant: small-caps;
+        }
+
+        h5 {
+            font-weight: 500;
+        }
+
+        .centrar {
+            margin: auto;
+            width: 60%;
+            border: 3px solid cyan;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Font family</h1>
+    <h2>Font size</h2>
+    <h3>Font style</h3>
+    <h4>Font variant</h4>
+    <h5>Font weight</h5>
+
+    <div class="centrar">
+            <p><b>Comentario:</b>El uso del margen no funciona en el IE8 o menores, se recomienda la declaracion !DOCTYPE </p></div>
+        
+</body>
+
+</html>

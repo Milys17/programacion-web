@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html  lang="es-MX">
+        <head><title>Tablas en HTML</title></head>
+        <body>
+            <!-- Tablas en HTML
+            Definir tabla <table></table>
+            Definir renglon <tr></tr>
+            Definir celda o dato <td></td>
+            Definir encabezado <th></th>
+            Definir titulo de la tabla <caption></caption> 
+        
+                Atributos de tabla
+            border          Numero de pixeles puro grosor
+            cellpadding     Distancia entre el borde y el dato
+            cellspacing     Separacion entre celdas
+            width           Ancho de la tabla
+            align           Alineacion de la tabla con respecto al documento web
+                
+                Atributos tr, td y th
+            align           alineacion dentro del renglon/celda
+            valign          alineacion vertical del renglon/celda
+            colspan         Numero de columnas que ocupara la celda
+            rowspan         Numero de renglones que ocupara la celda
+            width           Ancho de la celda                                     -->
+
+            <!-- 
+            <table border="3" width="50%">
+                <caption>Tabla No.1</caption>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+
+                <tr rowspan="3">
+                    <td>a</td>
+                    <td>b</td>
+                </tr>
+
+                <tr rowspan="3">
+                    <td>c</td>
+                    <td>d</td>
+                </tr>
+            </table> -->
+
+            <table width="50%" border="2">
+                <caption>Lista de contactos</caption>
+                <tr bgcolor="#67B67B">
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Red social</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Jose Antonio Dueñas Rivera</td>
+                    <td>(686)197-86-51</td>
+                    <td>
+                        <table border="3" width="100%">
+                            <tr>
+                                <td><a href="https://www.facebook.com/soy.el.memaster">Facebook</a></td>
+                                <td><a href="https://www.facebook.com/soy.el.memaster">Twitter</a></td>
+                                <td><a href="https://www.facebook.com/soy.el.memaster">Instagram</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Karina Salas Cisneros</td>
+                    <td>(686)191-46-81</td>
+                    <td><a href="https://www.facebook.com/kasacis">Facebook</a></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Carlos Andre Herrera Hernandez</td>
+                    <td>(686)112-31-10</td>
+                    <td><a href="https://www.facebook.com/black.maagic">Facebook</a></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Kevin Alberto Luna Gonzalez</td>
+                    <td>(686)107-16-10</td>
+                    <td><a href="https://www.facebook.com/KevinLuna09">Facebook</a></td>
+                </tr>
+            </table>
+
+            <!-- 
+                <marquee></marquee>
+
+                    behavior scroll,slide,alternate
+                    bgcolor color
+                    direction   left,right,up,down
+                    height  altura
+                    loop    1,2....n
+                    scrollamount    intervalo de desplazamiento
+                    scrolldelay retardo
+                    tirespeed   
+            -->
+        </body>
+    </html>

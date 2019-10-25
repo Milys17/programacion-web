@@ -1,0 +1,119 @@
+<!-- Elementos del formulario
+Elemento Select - Lista desplegable
+    <select name="Automoviles" size="3">
+        <option value="volvo">Volvo</option>
+        <option value="bmw">BMW</option>
+        <option value="merce">Mercedes</option>
+        <option value="audi">Audi</option>
+        <option value="porche">Porche</option>
+        <option value="bugatti" selected>Bugatti</option>
+    </select>
+
+Elemento textarea -> Area de texto
+Descripcion:
+<textarea name="desc" rows="10" cols="35">
+    El perro es el mejor animal de compañia para el ser humano... 
+</textarea>
+
+Elemento fieldset   Agrupa elementos del formulario 
+<form>
+    <fieldset><legend>Datos personales:</legend>
+        Nombre:<input type="text"><br>
+        Correo:<input type="email"><br>
+        Fecha de Nacimiento:<input type-"date"><br>
+    <fieldset>
+<form>
+
+Elemento button     Boton
+<button type="button" onclick="alert('Hola viajero!')">Activame</button>
+
+Elementos del formulario
+    Elemento datalist - prodefinida por Predefinida por un input
+
+    <form action="#">
+        <input list="Navegadores">
+        <datalist id="navegador">
+            <option  value="Edge">
+            <option  value="Mozilla Firefox">
+            <option  value="Google Chrome">
+            <option  value="Opera">
+            <option  value="Apple Safari">
+        </datalist>
+    </form>
+
+Elemento output - presenta datos calculados
+    <form>
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" values="50">
+        100 +
+        <input type-"number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br><input type="submit">
+    </form>
+-->
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <title>...</title>
+</head>
+
+<body>
+    <select name="Automoviles" size="3">
+        <option value="volvo">Volvo</option>
+        <option value="bmw">BMW</option>
+        <option value="merce">Mercedes</option>
+        <option value="audi">Audi</option>
+        <option value="porche">Porche</option>
+        <option value="bugatti" selected>Bugatti</option>
+    </select>
+
+    <br>
+    Descripcion:
+    <textarea name="desc" rows="10" cols="35">
+                    El perro es el mejor animal de compañia para el ser humano... 
+                    </textarea>
+
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>Datos personales:</legend>
+            Nombre:<input type="text"><br>
+            Correo:<input type="email"><br>
+            Fecha de Nacimiento:<input type-"date"><br>
+            <fieldset>
+                <form>
+
+                    <br>
+                    <button type="button" onclick="alert('Hola viajero!')">Activame</button>
+
+                    <br>
+
+                    <form action="#">
+                        <input list="Navegadores">
+                        <datalist id="navegador">
+                            <option value="Edge">
+                            <option value="Mozilla Firefox">
+                            <option value="Google Chrome">
+                            <option value="Opera">
+                            <option value="Apple Safari">
+                        </datalist>
+
+                        <br>
+
+                        <form>
+                            <on input="x.value=parseInt(a.value)+parseInt(b.value)">
+                            0
+                            <input type="range" id="a" name="a" values="50">
+                            100 +
+                            <input type-"number" id="b" name="b" value="50">
+                            =
+                            <output name="x" for="a b"></output>
+                            <br><br><input type="submit">
+                        </form>
+</body>
+
+</html>

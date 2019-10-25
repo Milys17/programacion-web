@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="es-MX">
+        <head><title>Barra de navegacion</title>
+            <style>
+                body{
+                    margin: 0;
+                }
+                
+                ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 25%;
+                    background-color: #f1f1f1;
+                    position: fixed;
+                    height: 100%;
+                    overflow: auto;
+                }
+
+                li a{
+                    display: block;
+                    color: #000;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                }
+
+                li a.activo{
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+                li a.hover:not(.activo){
+                    background-color: #555;
+                    color: white;
+                }
+            </style>
+        </head>
+
+        <body>
+            <h1> Ejemplo de listas opciones de navegacion </h1>
+            <ul>
+                <li><a class="activo" href="#home">Inicio</a></li>
+                <li><a href="#nuevo">Novedades</a></li>
+                <li><a href="#contacto">Contato</a></li>
+                <li><a href="#above">Nosotros</a></li>
+            </ul>
+
+            <div style="margin-left: 25%; padding: 2px 16px; height: 1000px;">
+                <h2> Menu de navegacion </h2>
+                <h3> Tratar de mover esta area y observar como la barra de opciones se mantiene en la pagina</h3>
+                <p>Nota: El cuadro div tiene un margen izquierdo de 25%. Esto es por la razon de que el menu de navegacion
+                   se mantiene con un ancho de 25%. Si usted remueve el margen, el menu se sobrepasa sus limites y provoca
+                   que se muestren las barras de desplazamiento</p>
+                <p>Texto Texto Texto</p>
+                <p>Texto Texto Texto</p>
+            </div>
+        </body>
+    </html>

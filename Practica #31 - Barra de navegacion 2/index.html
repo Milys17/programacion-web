@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <title>Barra de navegacion</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #555;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .btnbajar {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .bajar:hover .btnbajar {
+            background-color: tomato;
+        }
+
+        li .bajar {
+            display: inline-block;
+        }
+
+        .bajar-contenido a {
+            color: #000;
+            padding: 12px 16px;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        .bajar-contenido {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .bajar:hover .bajar-contenido {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#nuevo">Novedades</a></li>
+        <li class="bajar"><a href="javascript:void(0)" class="btnbajar">Muestra</a>
+            <div class="bajar-contenido">
+                <a href="#ojo1">Liga 1</a>
+                <a href="#ojo2">Liga 2</a>
+                <a href="#ojo3">Liga 3</a>
+            </div>
+        </li>
+    </ul>
+
+    <h3>Mostrar contenido de menu desplegable en una barra de opciones</h3>
+    <p>En la opcion muestra se activa con el puntero del raton</p>
+</body>
+
+</html>

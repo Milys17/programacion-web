@@ -1,0 +1,136 @@
+<!-- Display / Visibility : (hidden | visible)
+Elementos en bloque
+
+Elementos en bloque es por ejemplo el div:
+<div> <h1> ... <h6> <p> <form> <header> <footer> <section>
+Elemento en linea es por ejemplo span:
+<span> <a> <img>
+
+display: none/inline/block/inline-block
+         contents/flex/grid/inline-flex/table/indline-grid/inline-table/list-item/run-in/table-caption/table-column-group/table-header-group/table-footer-group/table-row-group/table-cell/table-column
+        
+        none:   El elemento no se muestra
+        inline: El elemento se muestra en modo linea
+        block   El elemento se muestra en modo bloque
+        inline-block   El elemento se muestra en modo linea pero agrega caracteristicas de bloque
+        grid    El elemento se muestra organizado en rejilla
+    
+<style>
+    p{ color: red;}
+    p.ej1{ display: none;}
+    p.ej2{ display: inline;}
+    p.ej3{ display: block;}
+    p.ej4{ display: inline-block;}
+    p.ej5{ display: grid;}
+    p.ej6{ display: flex;}
+</style>
+
+<h1> Propiedades de display </h1>
+<h2> Propiedad none </h2>
+<div> Texto Texto Texto ...
+    <p class="ej1"> Elemento con propiedad DISPLAY </p> Texto Texto Texto
+</div>
+
+Combinadores
+Relacion entre selector de descendiente " " (Espacio en blanco)
+    div p {...}
+
+.selector de hijo >
+    div > p {...}
+
+.selector de hermanos adyacentes +
+    div + p {...}
+
+.selector dehermanos ~
+    div ~ p {...}
+    
+Ejemplo
+    div p { background-color: orange;}
+    ----------------------------------
+    
+    <div>
+        <p>Parrafo 1 en elemento div </p>
+        <p>Parrafo 2 en elemento div </p>
+        <section> <p> Parrafo 3 en elemento div </p> </section>
+        <p>Parrafo y en elemento div </p> </div>
+        <p>Parrafo 5 fuera de elemento div </p>
+        <p>Parrafo 6 fuera de elemento div </p>
+-->
+
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <title>...</title>
+    <style>
+        p {
+            color: red;
+        }
+
+        p.ej1 {
+            display: none;
+        }
+
+        p.ej2 {
+            display: inline;
+            visibility: hidden;
+        }
+
+        p.ej3 {
+            display: block;
+        }
+
+        p.ej4 {
+            display: inline-block;
+        }
+
+        p.ej5 {
+            display: grid;
+        }
+
+        p.ej6 {
+            display: flex;
+        }
+
+        div > p { background-color: orange;}
+    </style>
+
+</head>
+
+<body>
+
+    <h1> Propiedades de display </h1>
+    <h2></h2>
+    <div>
+        <h2> Display None</h2>
+        Mensaje<p class="ej1"> Elemento con propiedad DISPLAY None </p> Mensaje de texto ejemplo
+        
+        <h2> Display Inline</h2>
+        Mensaje <p class="ej2"> Elemento con propiedad DISPLAY Inline</p> Mensaje de texto ejemplo
+
+        <h2> Display Block</h2>
+        Mensaje <p class="ej3"> Elemento con propiedad DISPLAY Block</p> Mensaje de texto ejemplo
+
+        <h2> Display Inline-block</h2>
+        Mensaje <p class="ej4"> Elemento con propiedad DISPLAY Inline-block</p> Mensaje de texto ejemplo
+
+        <h2> Display Grid</h2>
+        Mensaje <p class="ej5"> Elemento con propiedad DISPLAY Grid</p> Mensaje de texto ejemplo
+
+        <h2> Display Flex</h2>
+        Mensaje <p class="ej6"> Elemento con propiedad DISPLAY Flex</p> Mensaje de texto ejemplo
+    </div>
+
+    <br>
+
+    
+    <div>
+            <p>Parrafo 1 en elemento div </p>
+            <p>Parrafo 2 en elemento div </p>
+            <section> <p> Parrafo 3 en elemento div </p> </section>
+            <p>Parrafo y en elemento div </p> </div>
+            <p>Parrafo 5 fuera de elemento div </p>
+            <p>Parrafo 6 fuera de elemento div </p>
+</body>
+
+</html>

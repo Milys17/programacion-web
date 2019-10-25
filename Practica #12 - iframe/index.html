@@ -1,0 +1,59 @@
+<!-- Elemento iframe
+Muestra una pagina web dentro de un marco
+
+Ejemplo:
+<iframe src="http://www.google.com" height="250" width="350/>
+-------------------------------------------------------------
+<iframe src="contenido.html" name="marcoA"/>
+<p><a href="http://www.tecnm.mx" target="marcoA">Tecnologico Nacional de Mexico</a></p>
+
+Elementos de Bloques
+<div> <span>
+    html5 <header> <footer> <article> <section> 
+          (enlaces) <nav> <aside>
+                                                                -->
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <title>Elemento iframe</title>
+    <meta charset="UTF-8">
+        <meta lang="es" title="Español">
+        <meta name="Description" content="Clase de PrograWeb">
+        <meta name="Keywords" content="HTML, CSS, Javascript">
+        <meta name="author" content="Luis Rodriguez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <table cellspacing="5">
+        <tr>
+            <td>
+                <iframe src="https://www.facebook.com/" height="250" width="350"></iframe>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <iframe src="contenido.html" name="marco" height="250" width="350"></iframe>
+                <p><a href="https://www.facebook.mx" target="marco">Facebook</a></p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
+
+<!-- -*hacer nueva practica*- <head>
+     Elementos
+<title> Titulo del documento
+<style> Reglas de formatos CSS
+<link>  Vincular archivos CSS
+<meta>  Especificar conjunto de caracteres, descriocion de la pagina,
+        palabras clave, autor, otros datos.
+        <meta charset="UTF-8">
+<script> Definir rutinas javascript del lado cliente
+<base>  Define URL base y meta
+
+¿Que sucede si omites <html> <head> y <body>? haz el experimento-->

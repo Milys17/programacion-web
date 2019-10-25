@@ -1,0 +1,46 @@
+<!-- Formularios <form>
+Define formas para recolectar informacion del usuario
+
+Atributos 
+action  Definir la accion cuando se envia el formulario
+target  Definir donde se presentara resultado
+method  Metodo http de envio (GET, POST)
+
+Elemento de formulario <input>
+
+Se presenta de varias maneras dependiendo del atributo type=
+                                                                        -k map solver free-
+<input type="text">
+<input type="text" name="nombre">
+
+valores del atributo type
+    button, checkbox, color, date, email, file, hidden, image,
+    month, number, password, radio, range, reset, search, submit, tel, text, textarea,
+    time, url, week
+
+Atributos de input
+accept          Define filtro de entradas permitidas
+align           Alineacion en el campo de captura
+autocomplete    (on/off) permite el autocompletado
+autofocus       Defie la secuencia de captura
+checked         Activa casilla o radio
+width,heaight   Dimensionas el campo
+maxlenght       Maximo de caracteres en el campo
+name            Identificador del elemento
+pattern         plantilla de entrada
+placeholder     Montaje para el usuario en el campo
+-->
+<!DOCTYPE html>
+    <html lang="es-MX">
+        <head><title>Formulario</title></head>
+        <body>
+            <form action="#" method="GET">
+                Escribe los datos que se te solicitan <br><br>
+                Nombre:<input type="text"><br>
+                Apellidos:<input type="text"><br>
+                Edad<input type="number"><br>
+                <br>
+                <input type="submit"><input type="reset">
+            </form>
+        </body>
+    </html>

@@ -1,0 +1,102 @@
+<!-- Propiedades para listas 
+list-style
+    -type
+        disc, armenian, circle, cjk-ideographic,
+        decimal, decimal-leading-zero, georgian,
+        hebrew, hiragana, hiragana-iroha, katakana,
+        katakana-iroha, lower-alpha, lower-greek,
+        lower-latin, lower-roman, none, upper-alpha,
+        upper-greek, upper-latin, upper-roman
+    
+    -position
+        inside / outside
+    
+    -image
+        url
+    
+    Ejemplo:  <style>
+                ul{
+                   list-style-type: none;
+                   padding: 0;
+                   border: 1px solid #ccc;
+                }
+----------------------------------------------------
+                ul li{
+                   padding: 8px 16px;
+                   border-botom: 1px solid #ccc;
+                }
+                ul li:last-child{
+                    border-bottom: none;
+                }
+              </style>
+              
+        <p>Lista a pantalla completa </p>
+        <ul>
+        <li> cafe </li>
+        <li> Te </li>
+        <li> Chocolate </li>
+        <li> Refresco </li>
+        <li> Agua embotellada </li>
+        </ul>
+
+        <ol>
+            <li> Azucar </li>
+            <li> Sal </li>
+            <li> Paprika </li>
+        </ol>
+    -->
+
+<!DOCTYPE html>
+    <html lang="es-MX">
+        <head><title>Propiedades para listas</title>
+            <style>
+                    ul{
+                       list-style-type: none;
+                       padding: 0;
+                       border: 1px solid #ccc;
+                    }
+
+                    ul li{
+                       padding: 8px 16px;
+                       border-bottom: 1px solid #ccc;
+                    }
+                    ul li:last-child{
+                        border-bottom: none;
+                    }
+
+                    ol{
+                       list-style-type: none;
+                       padding: 0;
+                       border: 1px solid #ffff00;
+                    }
+
+                    ol li{
+                        padding:  10px 18px;
+                        border-top: 3px groove #ffff00;
+                    }
+
+                    ol li:first-child{
+                        border-top: none;
+                    }
+                  </style>
+        </head>
+        <body>
+                <p>Lista a pantalla completa </p>
+                <ul>
+                <li> cafe </li>
+                <li> Te </li>
+                <li> Chocolate </li>
+                <li> Refresco </li>
+                <li> Agua embotellada </li>
+                </ul>
+
+                <br>
+                <br>
+
+                <ol>
+                        <li> Azucar </li>
+                        <li> Sal </li>
+                        <li> Paprika </li>
+                    </ol>
+        </body>
+    </html>

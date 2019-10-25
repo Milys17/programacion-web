@@ -1,0 +1,42 @@
+<!-- Marcos (Frame)
+    Archivo principal
+    Estructura
+
+    (id)Encabezado
+(id)Enlaces     (id)Cuerpo
+       (id)Pie
+
+Cada elemento (identificador) es una pagina HTML
+
+Atributos Frameset
+    rows    %,*
+    cols    %,*
+    border  0...5 grosor de bordes
+    frameborder "yes|no" "1|0"
+    framespacing    En pixeles 0...n
+                    Ejemplo framespacing="10"
+                    
+Atributos Frame
+    src     origen del archivo
+    name    nombre del marco
+    frameborder "yes|no"
+    width   ancho del marco
+    marginwidth    ancho del marco interior
+    marginheight   alto del marco interior
+    noresizes   "yes|no"
+    scrolling   "yes|no|auto"
+-->
+
+<!DOCTYPE html>
+<!-- Estructura -->
+    <html lang="es-MX">
+        <head><title>Archivo indice</title></head>
+        <Frameset rows="25%, 60%, *">   <!-- * = resto o comodin de residuo-->
+            <frame name="Encabezado" src="encabezado.html" frameborder="yes" />
+            <frameset cols="30%, *">
+                <frame name="Enlaces" src="enlaces.html" frameborder="yes" bordercolor="purple" />
+                <frame name="Cuerpo" src="cuerpo.html" frameborder="yes" bordercolor="yellow" />
+            </frameset>
+            <frame name="Encabezado" src="pie.html" frameborder="yes" />
+        </Frameset>
+    </html>

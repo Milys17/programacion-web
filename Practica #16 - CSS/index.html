@@ -1,0 +1,175 @@
+<!-- Reglas CSS en archivo .css
+-Archivo
+ Dentro del head
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+-Interno
+ Dentro del head
+    <style>
+        codigo css
+    </style>
+
+-En linea
+    <p style="regla css;">
+
+Sintaxis
+selector{
+    Propiedad: valor; propiedad: valor;...
+}
+p{
+    color: purple;
+    text-align: center;
+}
+
+comentarios /* ... */
+Selector universal *
+    * {color: blue;}
+
+selecto ID
+<p id="diferente">
+-------------------
+#diferente {
+        color: brown;
+        text-align:right;
+}
+
+select class
+<p class="peculiar">
+--------------------
+.peculiar{
+        color:tomato;
+        text-align:justify;
+}
+-->
+
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <title>Practica 1 de HTML</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+        <style>
+            p{
+                color:orange;
+            }
+
+            h1{
+                color:blue;
+            }
+
+            #diferente {
+            color: brown;
+            text-align:right;
+}
+        </style>
+</head>
+
+<body>
+    <table width="60%" cellpadding="8" border="1">
+        <thead>
+            <tr>
+                <th>
+                    <img src="https://newsweekespanol.com/wp-content/uploads/2019/09/earth.jpg">
+                </th>
+
+                <th >
+                    <h1>
+                    Un 70 % de las emisiones de gases de invernadero producidas cada año pueden atribuirse a 100
+                    compañías
+                    </h1>
+                        <br>
+                    <h1>
+                    OTRO H1
+                    </h1>
+
+                </th>
+            </tr>
+        </thead>
+
+        <tbody cellpadding="10" cellspacing="10">
+
+            <tr>
+                <td rowspan="1" colspan="2" cellpadding="5">
+                    <span>
+                        <span>
+                                <p id="diferente">Nunca la frase <strong>“un gran poder conlleva una gran responsabilidad”</strong> ha
+                                sonado más cierta.
+                                Un informe publicado en la revista <strong>Nature Ecology and Evolution</strong> concluye que solo un
+                                puñado
+                                de corporaciones
+                                transnacionales (o CTN) blanden una influencia desproporcionada cuando se trata del
+                                medio
+                                ambiente y el éxito
+                                sustentable a largo plazo.</p>
+
+                            <p>El mercado mundial de pesticidas está monopolizado esencialmente por
+                                cuatro compañías. Esta
+                                es una característica
+                                predecible del desarrollo económico, dicen ellas. Un puñado de <strong>CTN</strong> consolidarán su
+                                posición
+                                en el mercado hasta que
+                                se queden con la mayor parte y esencialmente monopolicen la industria. Ellas confirman
+                                su
+                                dominio a través de varios
+                                medios, desde navegar los esquemas reguladores mundiales de manera oportunista hasta
+                                establecer barreras de ingreso
+                                que aplastan la competencia de compañías más pequeñas. Al final, nos quedamos con un
+                                pequeño
+                                grupo de élite de compañías
+                                en la cima. <strong>“De hecho, la escala en que operan las CTN, y la velocidad y conectividad
+                                que
+                                galvanizan en todo el mundo
+                                no tiene precedente en la historia”</strong>, escriben los autores.</p>
+                        </span>
+                    </span>
+                </td>
+            </tr>
+
+            <tr colspan="2" >
+                <td > <span>
+                        <p >Estadísticas desconcertantes, o impresionantes</p>
+                        <ul >
+                            <li>Alrededor de 70 por ciento de las emisiones de gases de invernadero arrojadas a la
+                                atmósfera de la Tierra cada año pueden atribuirse a 100 compañías.</li>
+                            <li>Aproximadamente 10 por ciento de las corporaciones del mundo obtienen 80 por ciento
+                                de las ganancias mundiales.</li>
+                        </ul>
+                    </span>
+                </td>
+                <td><img src="https://www.grupoioe.es/wp-content/uploads/2019/01/efectoinvernaderocab.jpg"></td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td rowspan="1" colspan="2"> <span><br>&nbsp &nbsp &nbsp Visita
+                        Páginas:</span>
+                    <p ><span><a href="https://newsweekespanol.com/2019/09/elite-companias-control-medio-ambiente-mundial/" >Elite compañias de control del medio ambiente mundial</a></span></p>
+                    <p ><span><a href="https://newsweekespanol.com/2019/01/antiguo-circulo-piedras-decada/" >Antiguos circulos de piedra</a></span></p>
+                    <p ><span><a href="https://newsweekespanol.com/tag/medio-ambiente/">Medio Ambiente</a></span></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="1" colspan="2">
+                    <footer>
+                        <table width="100%" cellpadding="5" border="0">
+                            <tr cellspacing="10" >
+                                <th>
+                                    <h3>Miriam Bonilla Tamayo</h2>
+                                </th>
+                                <th>
+                                    <h3><a href="mailto:Miriam17_9@outlook.com"
+                                            style="color:white">Miriam17_9@outlook.com</h3></a>
+                                </th>
+                            </tr>
+                        </table>
+                    </footer>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
