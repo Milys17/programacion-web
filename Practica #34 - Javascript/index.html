@@ -1,0 +1,52 @@
+<!-- Javascript
+Norma EMAC-262
+Nombre oficial EMACSCRIPT
+
+¿Que se puede hacer con JS?
+    -Cambiar contenido
+    -Cambiar atributos html
+    -Cambiar estilos CSS
+    -Ocultar y mostrar Elementos HTML
+
+El codigo JS utiliza la etiqueta 
+    <script>
+        codigo
+    </script>
+
+Se puede colocar codigo JS tanto en <head> como <body>
+    
+La mayor parte de JS se basa en funciones (function) que se ejecuta cuando es invocada.
+
+JS externo <script src="miscript.js"></script>
+
+Salidas
+    - .innerHTML
+    - document.write().
+    - window.alert()
+    - console.log().
+-->
+<!DOCTYPE html>
+    <html lang="es-MX">
+        <head><title>JS</title></head>
+        <body>
+            <h1>Primer pagina web con Javascript</h1>
+            <p>Diferentes formas de mostrar resultads con JS</p>
+            <p id="muestra1"></p>
+
+            <script>
+                document.getElementById("muestra1").innerHTML="Hola Mundo JS con innerHTML";
+            </script>
+
+            <p>El proximo es utilizando otro metodo</p>
+
+            <script>
+                document.write("Hola mundo con Write()");
+            </script>
+
+            <button type="button" onclick='window.alert("Hola Mundo con alert()");'>Prueba</button>
+
+            <script>
+                console.log("Hola JS con console.log()");
+            </script>
+        </body>
+    </html>

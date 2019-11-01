@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+    <html lang="es-MX">
+        <head><title>Arreglos de autos</title></head>
+        <body>
+            <!-- <script src="script.js"></script> -->
+
+            <H2>Operaciones con arreglos</H2>
+            <p id="muestra"></p>
+
+            <script>
+                var autos=["Suzuki", "Mitsubishi","Toyota","Nissan"];
+                document.getElementById("muestra").innerHTML = 'La declaracion del arreglo var aitos = [\"Suzuki\", \"Mitsubishi\", \"Toyota\", \"Nissan\]"';
+                // despliega los elementos del arreglo
+                document.write("<b>Elementos del arreglo</b>" + autos);
+                // despliega los elementos por la posicion
+                document.write("<br>El auto que yo tengo es:<b> "+autos[0]+"</b>");
+                document.write("<br>El auto que tuve priemro es:<b> "+autos[autos.length-1]+"</b>");
+                document.write("<br>Autos ordenados"+autos.sort()+"</b>");
+                document.write("<br>")
+                
+                var texto = "<ul>";
+                    autos.forEach(verLista);
+                    texto += "</ul>";
+                    document.write(texto);
+                    
+                    function verLista(value){
+                        texto += "<li>" +value+"</li>";
+                    }
+
+                    document.write(autos);
+                    //agregamos al final un elemento
+                    autos.push("Acura");
+                    document.write("<br>"+autos);
+                    //agregamos al principio un elemento
+                    autos.unshift("Isusu");
+                    document.write("<br>"+autos);
+                    //eliminamos el ultimo elemento
+                    autos.pop();
+                    document.write("<br>"+autos);
+                    //eliminamos el primer elemento
+                    autos.shift();
+                    document.write("<br>"+autos);
+                    delete autos[2];
+                    document.write("<br>"+autos);
+                    document.write("<br>"+autos[2]);
+            </script>
+        </body>
+    </html>

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+    <html lang="es-MX">
+        <head><title>Arreglos en javascript</title></head>
+        <body>
+             <script src="script.js"></script>
+
+            <H2>Lista de alumnos</H2>
+            <p id="muestra"></p>
+
+            <script>
+                var alumnos=["Alma", "Beatriz","Carlos","Delia","Ernesto"];
+                document.getElementById("muestra").innerHTML = alumnos.length;
+                
+                var i, lista;
+                lista = "<ul>";
+
+                    for( i=0; i<alumnos.length; i++){
+                        lista += "<li>" +alumnos[i]+"</li>";
+                    }
+                    
+                    lista += "</ul>"
+                    document.write(lista);
+            </script>
+            <p>Lista terminada</p>
+        </body>
+    </html>
