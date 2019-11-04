@@ -3,8 +3,6 @@
     <html lang="es-MX">
         <head><title>Arreglos de autos</title></head>
         <body>
-            <!-- <script src="script.js"></script> -->
-
             <H2>Operaciones con arreglos</H2>
             <p id="muestra"></p>
 
@@ -17,7 +15,7 @@
                 document.write("<br>El auto que yo tengo es:<b> "+autos[0]+"</b>");
                 document.write("<br>El auto que tuve priemro es:<b> "+autos[autos.length-1]+"</b>");
                 document.write("<br>Autos ordenados"+autos.sort()+"</b>");
-                document.write("<br>")
+                document.write("<br>");
                 
                 var texto = "<ul>";
                     autos.forEach(verLista);
@@ -44,6 +42,25 @@
                     delete autos[2];
                     document.write("<br>"+autos);
                     document.write("<br>"+autos[2]);
+                    
+                    var autosEuropeos=["BMW", "Audi", "Porche", "Daymler"];
+                    document.write(autosEuropeos+"<br>");
+                    var foraneos = autosEuropeos.join(autos);
+                    document.write(foraneos);
+                    document.write("<br>"+autos);
+                    // Agregar elementos
+                    autos.splice(2,1, "Ford", "Dodge","Chevrolet");
+                    document.write("<br>"+autos);
+                    //Unir tres arreglos en un cuarto arreglo
+                    var todosUnidos = autos.concat(autosEuropeos,foraneos,"Jeep", "Citroen");
+                    todosunidos.join(" * ");
+                    document.write("<br>"+todosUnidos.sort());
+                    //Partir en 2 un arreglo
+                    var mensaje = "Hola";
+                    document.write(mensaje);
+                    var mitad = todosUnidos.slice(8);
+                    document.write("<br>"+mitad+"<br>");
+                    document.write(todosUnidos+"<br>");
             </script>
         </body>
     </html>
