@@ -1,0 +1,65 @@
+<!-- Creacion de elementos
+    1. Crear nodo de tipo elemento
+        var parrafo = document.createElement("p");
+    
+    2. Crear nodo de tipo texto
+        var contenido = document.createTextNode("Programacion web con Javascript");
+    
+    3. Agregar el nodo texto como nodo hijo del elemento
+        parrafo = document.appendChild(contenido);
+    
+    4. Agregar el nodo elemento a la pagina
+        document.body.appendChild(parrafo);
+    
+    5. Eliminacion de nodos
+        var parrafo = document.getElementById("identificador");
+        parrafo.parentNode.removeChild(parrafo)
+        parrafo.replaceChild(elementoNuevo, elementoViejo
+    
+            <p id="identificador">...</p>
+            
+        objetos HTML
+        document.anchors
+        .applets
+        .baseURI
+        .body
+        .cookie
+        .doctype
+        .documentElement
+        .documentMode
+        .documentURI
+        .strictErrorChecking
+        .readyState
+        .referer
+        .scripts
+        .domain
+        .domConfig
+        .embeds
+        .forms
+        .head
+        .images
+        .implementation
+        .inputEncodign
+        .lastModified
+        .links
+        .title
+        .URL-->
+
+<!DOCTYPE html>
+    <html lang="es-MX">
+        <head><title>Reemplazo por etiqueta y clase</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        </head>
+        <body>
+              <div>
+                  
+                  <input type="button" onclick="animar()" value="Clic para animar">
+                </div>       
+                
+                <div id="area-movimiento">
+                    <button type='button' class='objeto' id="cuadro"></button>
+                </div>
+        </body>
+    </html>

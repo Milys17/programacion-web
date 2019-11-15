@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8"
+        name="description" content="Calculadora de operaciones basicas creada en con JS y HTML"
+        name="keywords" content="HTML,CSS,JavaScript,Calculadora"
+        name="author" content="1649110 - Miriam Bonilla Tamayo"
+        name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <div class="calculadora" align="center">
+        <div class="pantalla">
+            <Input type="text" id="pantalla" />
+        </div>
+        <div class="teclado">
+            <div class="empaque">
+                <button class="teclado-propiedades" id="key_7" onclick="siete()">7</button>
+                <button class="teclado-propiedades" id="key_8" onclick="ocho()">8</button>
+                <button class="teclado-propiedades" id="key_9" onclick="nueve()">9</button>
+                <button class="teclado-propiedades" id="key_division" onclick="division()">/</button>
+                <button class="teclado-propiedades" id="key_residuo" onclick="residuo()">%</button>
+            </div>
+            <div class="empaque">
+                <button class="teclado-propiedades" id="key_4" onclick="cuatro()">4</button>
+                <button class="teclado-propiedades" id="key_5" onclick="cinco()">5</button>
+                <button class="teclado-propiedades" id="key_6" onclick="seis()">6</button>
+                <button class="teclado-propiedades" id="key_multiplicacion" onclick="multiplicacion()">x</button>
+                <button class="teclado-propiedades" id="key_raiz" onclick="raiz()">√</button>
+            </div>
+            <div class="empaque">
+                <button class="teclado-propiedades" id="key_1" onclick="uno()">1</button>
+                <button class="teclado-propiedades" id="key_2" onclick="dos()">2</button>
+                <button class="teclado-propiedades" id="key_3" onclick="tres()">3</button>
+                <button class="teclado-propiedades" id="key_resta" onclick="resta()">-</button>
+                <button class="teclado-propiedades" id="key_cuadrado" onclick="cuadrado()">x²</button>
+            </div>
+            <div class="temp empaque">
+                <button class="teclado-propiedades" id="key_punto" onclick="punto()">.</button>
+                <button class="teclado-propiedades" id="key_0" onclick="cero()">0</button>
+                <button class="teclado-propiedades" id="key_resultado" onclick="resultado()">=</button>
+                <button class="teclado-propiedades" id="key_suma" onclick="suma()">+</button>
+                <button class="teclado-propiedades" id="key_c" onclick="borrar()">Borrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

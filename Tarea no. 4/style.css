@@ -1,0 +1,63 @@
+body {
+    padding: 5px;
+}
+
+button {
+    height: 80px;
+}
+
+.calculadora {
+    width: 30%;
+    background-color: gray;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.empaque {
+    background-color: gray;
+}
+
+.empaque button {
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+html {
+    background-color: bisque;
+}
+
+#pantalla {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    width: 300px;
+    padding: 60px;
+    margin-top: 8px;
+    direction: RTL;
+}
+
+.teclado {
+    margin: 10px;
+    background-color: gray;
+}
+.teclado-propiedades {
+    width: 80px;
+    margin-top: 5px;
+}
+
+.teclado button {
+    color: black;
+    font-size: 23px;
+    background-color: white;
+}
+
+.temp button {
+    margin-bottom: 5px;
+}
