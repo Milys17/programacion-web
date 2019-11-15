@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8"
-        name="description" content="Calculadora de operaciones basicas creada en con JS y HTML"
+        name="description" content="Calculadora de operaciones basicas creada en con JS y HTML. 
+        Nota: Las operaciones no pueden ser concatenadas (5 + 6 + ...), es decir, se debe obtener
+        el resultado entre dichas operaciones para concatenar resultados (5 + 6 = + 8 ...), de otra
+        forma solo operara los ultomos dos valores"
         name="keywords" content="HTML,CSS,JavaScript,Calculadora"
         name="author" content="1649110 - Miriam Bonilla Tamayo"
         name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +20,7 @@
     <h1>Calculadora</h1>
     <div class="calculadora" align="center">
         <div class="pantalla">
-            <Input type="text" id="pantalla" />
+            <Input type="text" id="pantalla" readonly />
         </div>
         <div class="teclado">
             <div class="empaque">

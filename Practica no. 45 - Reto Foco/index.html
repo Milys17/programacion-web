@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <html lang="es-MX" style="margin: auto; width: 50%; text-align: center;">
+        <head><title>Reto Foco</title>
+            <script>
+                function encencer(){
+                    document.getElementById("foco").src ="img/foco_encendido.gif";
+                }
+                
+                function apagar(){
+                    document.getElementById("foco").src = "img/foco_apagado.gif";
+                }
+            </script>
+        </head>
+        <body style="align-content: center; padding: 60px;">
+            <button align="center" id="Encender" onclick="encencer()">Encender</button>
+            <img src="img/foco_apagado.gif" align="center" id="foco">
+            <button align="center" id="Apagar" onclick="apagar()">Apagar</button>
+        </body>
+    </html>
