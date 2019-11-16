@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8" name="description" content="" name="keywords" content="HTML,CSS,JavaScript,Formulario"
+        name="author" content="1649110 - Miriam Bonilla Tamayo" name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="formulario">
+        <!-- <h1>Formulario</h1> -->
+        <form>
+            <div class="seccion-form">
+                <label>Nombre</label>
+                <input type="text" name="nombre">
+            </div>
+            <div class="seccion-form">
+                <label>Apellido</label>
+                <input type="text" name="apellido">
+            </div>
+            <div class="seccion-form">
+                <label>Fecha de Nacimiento</label>
+                <input type="date" name="nacimiento" max="2019-11-15" min="1909-12-31" value="2015-10-14">
+            </div>
+            <div class="seccion-form">
+                <label>Genero</label>
+                <div class="genero">
+                    <input type="radio" name="genero" value="Femenino">Femenino
+                    <input type="radio" name="genero" value="Masculino">Masculino
+                </div>
+            </div>
+            <hr>
+            <div class="seccion-form">
+                <label>Correo Electronico</label>
+                <input type="email" name="correo">
+            </div>
+            <div class="seccion-form">
+                <label>Contraseña</label>
+                <input type="email" name="pass">
+            </div>
+            <div class="seccion-form">
+                <label>Confirmar Contraseña</label>
+                <input type="email" name="passConf">
+            </div>
+            <hr>
+            <div class="seccion-form">
+                    <input type="submit" value="Registrar">
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
