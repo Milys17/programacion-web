@@ -2,6 +2,14 @@ html {
     font: 1rem 'PT Sans', sans-serif;
 }
 
+body {
+    height: 100%;
+    background-image: url('https://images.wallpapersden.com/image/download/small-memory_58461_3840x2160.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
 
 
 hr {
@@ -16,7 +24,7 @@ hr {
     padding: 5px;
     border-radius: 8px;
     border: 1px rgba(0, 0, 0, 0.295) solid;
-    box-shadow: -9px 10px 0px -3px rgba(0, 0, 0, 0.199);
+    background-color: #00000083;
 }
 
 form:not(.section-form){
@@ -29,14 +37,14 @@ form:not(.section-form){
 }
 
 .seccion-form label {
-    margin-bottom: 5px;
     font-size: 16px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 input:not([type="radio"]):not([name="telefono"]):not([type="submit"]) {
-    width: 100%;
+    width: 94%;
     height: 30px;
     font: 1rem 'PT Sans', sans-serif;
 }
@@ -60,18 +68,29 @@ input[type="radio"] {
     width: 65%;
 }
 
-input[type="submit"] {
+input[type="submit"]{
     width: 100%;
     margin: auto;
     height: 40px;
     border-radius: 5px;
     border: 1px rgba(45, 45, 204, 0.541);
-    background-color: rgba(45, 45, 204, 0.541);
+    background-color: rgba(45, 45, 204, 0.952);
     font-weight: bolder;
     font-size: 20px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #087720;
+}
+
 input {
     border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type="date"]{
+    color: gray;
 }
