@@ -15,42 +15,49 @@
     <h1 align="center">Registrate!</h1>
     <br>
     <div id="formulario">
-        <form>
+        <form name="formulario" action="registro.html" onsubmit="return validar();">
             <div class="seccion-form">
-                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre" >
+                <label id="error-nombre">Error, ingrese un nombre valido</label>
             </div>
             <div class="seccion-form">
-                <input type="text" name="apellido" placeholder="Apellido">
+                <input type="text" name="apellido" placeholder="Apellido" id="apellido">
+                <label id="error-apellido">Error, ingrese un nombre valido</label>
             </div>
             <div class="seccion-form">
-                <label>Fecha de Nacimiento</label>
-                <input type="date" name="nacimiento" max="2019-11-15" min="1909-12-31" value="2015-10-14" placeholder="Fecha de nacimiento">
+                <label class="ignorar">Fecha de Nacimiento</label>
+                <input type="date" name="nacimiento" max="2019-11-15" min="1909-12-31" value="2015-10-14" placeholder="Fecha de nacimiento" id="fechaNac">
             </div>
             <div class="seccion-form">
-                <label>Genero</label>
+                <label class="ignorar">Genero</label>
                 <div class="genero">
-                    <input type="radio" name="genero" value="Femenino">Femenino
-                    <input type="radio" name="genero" value="Masculino">Masculino
+                    <input type="radio" name="genero" value="Femenino" id="femenino">Femenino
+                    <input type="radio" name="genero" value="Masculino" id="masculino">Masculino
                 </div>
+                <label id="error-genero">Error, seleccione un genero</label>
             </div>
             <div class="seccion-form">
                 <div class="telefono">
-                    <input type="text" name="telefono" id="lada" placeholder="Lada">
-                    <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+                    <input type="text" id="lada" name="lada" placeholder="Lada" pattern="\d*">
+                    <input type="text" id="telefono" name="telefono" placeholder="Telefono" pattern="\d*">
                 </div>
+                <label id="error-telefono">Error, ingrese un numero telefonico valido</label>
             </div>
             <hr>
             <div class="seccion-form">
-                <input type="email" name="correo" placeholder="Correo">
+                <input type="text" name="correo" placeholder="Correo" id="correo">
+                <label id="error-correo">Error, ingrese un correo valido</label>
             </div>
             <div class="seccion-form">
-                <input type="password" name="pass" placeholder="Contraseña">
+                <input type="password" name="pass" placeholder="Contraseña" id="pass">
+                <label id="error-pass">Error, defina una contraseña valida</label>
             </div>
             <div class="seccion-form">
-                <input type="password" name="passConf" placeholder="Confirmar Contraseña">
+                <input type="password" name="passConf" placeholder="Confirmar Contraseña" id="passConf">
+                <label id="error-passConf">Error, las contraseñas no coinciden</label>
             </div>
             <div class="seccion-form">
-                <input type="submit" value="Registrar">
+                <input type="submit" value="Registrar" onclick="validar()">
             </div>
         </form>
     </div>

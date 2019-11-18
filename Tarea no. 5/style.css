@@ -94,3 +94,8 @@ input {
 input[type="date"]{
     color: gray;
 }
+
+label:not([class="ignorar"]){
+    color: red;
+    display: none;
+}
